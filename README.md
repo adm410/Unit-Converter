@@ -1,12 +1,12 @@
 [![Build Complete](https://img.shields.io/badge/build-passing-brightgreen)](https://adm410.github.io/Unit-Converter/)
 ![GitHub Release Date](https://img.shields.io/github/release-date/adm410/Unit-Converter)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/adm410/Unit-Converter)
-![Website](https://img.shields.io/website?url=https%3A%2F%2Fadm410.github.io%2FUnit-Converter%2F)
+![Website](https://img.shields.io/website?url=https://adm410.github.io/Unit-Converter/)
 # ToDo
 
 A simple Unit Converter made using HTML, Javascript and CSS.
 
-Converter can be accessed using this [link](https://adm410.github.io/Unit-Converter/).
+Unit Converter can be accessed using this [link](https://adm410.github.io/Unit-Converter/).
 
 
 ## Screenshots
