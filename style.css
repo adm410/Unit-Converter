@@ -1,0 +1,24 @@
+body {
+  font-family: arial;
+}
+
+.heading {
+  font-size: 350%;
+}
+
+.result{
+  font-size: 100%;
+}
+.custom-select {
+  font-size: 100%;
+  position: relative;
+}
+.box{
+  padding-right: 10px;
+  font-size: 120%;
+}
+
+#result{
+  line-height: 35px;
+  font-size: 130%;
+}
