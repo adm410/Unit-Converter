@@ -11,9 +11,8 @@ Converter can be accessed using this [link](https://adm410.github.io/Unit-Conver
 
 ## Screenshots
 
-![Screenshot-1a](https://user-images.githubusercontent.com/90643958/162558186-1f54868b-fd2c-4cba-b87f-24f0f513d8e1.png#gh-light-mode-only)
-![Screenshot-1b](https://user-images.githubusercontent.com/90643958/162558197-491474f6-d3e4-4809-be9b-f1ac07af4b28.png#gh-dark-mode-only)
+![Screenshot-1a](https://user-images.githubusercontent.com/90643958/164453681-a2b2b4d0-8827-4953-8e5f-09f9b4065ba7.png#gh-light-mode-only)
+![Screenshot-1b](https://user-images.githubusercontent.com/90643958/164453692-b6094b40-496a-4441-81da-d347fc416b19.png#gh-dark-mode-only)
 ##
-![Screenshot-2a](https://user-images.githubusercontent.com/90643958/162558189-d268ae68-6351-4d14-9b5f-ed1a6bb04409.png#gh-light-mode-only)
-![Screenshot-2b](https://user-images.githubusercontent.com/90643958/162558200-49ac33e5-1f18-4f9f-b2e5-67126d92c7f9.png#gh-dark-mode-only)
-
+![Screenshot-2a](https://user-images.githubusercontent.com/90643958/164453766-dfefffc1-07a2-4f7e-bc75-3a7845632c36.png#gh-light-mode-only)
+![Screenshot-2b](https://user-images.githubusercontent.com/90643958/164453818-60fa1be6-6bde-409f-8e53-637db76c1c96.png#gh-dark-mode-only)
