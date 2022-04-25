@@ -1,5 +1,6 @@
 <html>
-  <head>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale= 0.5">
 <link rel="shortcut icon" type="image/png" href="https://raw.githubusercontent.com/adm410/Unit-Converter/V1/logo.png"/>
 <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/adm410/Unit-Converter/V1/logo.png">
 <link rel="icon" href="https://raw.githubusercontent.com/adm410/Unit-Converter/V1/favicon.ico">
@@ -8,15 +9,14 @@
     <meta name="color-scheme" content="dark light">
     <link rel="stylesheet" type="text/css" href="./style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="units.js" type="text/javascript">//</script>
-    <script src="obj.js" type="text/javascript">//</script>
+    <script src="units.js" type="text/javascript"></script>
+    <script src="obj.js" type="text/javascript"></script>
   </head>
-
+  <a href="https://github.com/adm410/Unit-Converter" target="_blank" class="versiontext">V2</a>
   <body>
-    <br>
     <h1 class="heading">Unit Convertor</h1>
-
-    Convert <select class="result" class="custom-select" id="grpSelect" style="width:10%" onchange="grpSwitch()" onclick="grpSwitch()">
+    Convert <select class="result" class="custom-select" id="grpSelect" style="width:10%" onchange="grpSwitch(),convUnits('time'), convUnits('lgth'), convTmp(), convUnits('it'), convUnits('area'), convUnits('mass'), convUnits('vol'), convUnits('spd')">
+      <option disabled selected value="grpNull">Select...</option>
       <option value="grpTime">Time</option>
       <option value="grpLength">Length</option>
       <option value="grpTemperature">Temperature</option>
@@ -26,16 +26,16 @@
       <option value="grpVolume">Volume</option>
       <option value="grpSpeed">Speed</option>
     </select>
-
+    <div class="result" id="grpNull" style="display:none;"></div>
 <!--Time-->
       <div class="result" id="grpTime" style="display:none;">
         <br>
-      <input class="box" type="number" value="1" min="1" id="timeamt" onkeyup="convUnits('time')">
+      <input class="box" type="number" value="1" min="1" id="timeamt" onchange="convUnits('time')">
       from <select id="timefr" class="result" onchange="convUnits('time')">
         <option value="uMs">Millisecond (ms)</option>
         <option value="uSec">Second (s)</option>
         <option value="uMin">Minute (min)</option>
-        <option SELECTED value="uHr">Hour (hr)</option>
+        <option selected value="uHr">Hour (hr)</option>
         <option value="uDay">Day</option>
         <option value="uWk">Week</option>
         <option value="uMo">Month</option>
@@ -45,7 +45,7 @@
       </select>
       to <select id="timeto" class="result" onchange="convUnits('time')">
         <option value="uMs">Millisecond (ms)</option>
-        <option SELECTED value="uSec">Second (s)</option>
+        <option selected value="uSec">Second (s)</option>
         <option value="uMin">Minute (min)</option>
         <option value="uHr">Hour (hr)</option>
         <option value="uDay">day</option>
@@ -60,11 +60,11 @@
 <!--Length-->
       <div class="result" id="grpLength" style="display:none;">
         <br>
-        <input class="box" type="number" value="1" min="1" id="lgthamt" onkeyup="convUnits('lgth')">
+        <input class="box" type="number" value="1" min="1" id="lgthamt" onchange="convUnits('lgth')">
         from <select class="result" id="lgthfr" onchange="convUnits('lgth')">
           <option disabled>--Metric--</option>
           <option value="uMm">Milimetre (mm)</option>
-          <option SELECTED value="uCm">Centimetre (cm)</option>
+          <option selected value="uCm">Centimetre (cm)</option>
           <option value="uM">Metre (m)</option>
           <option disabled>--Imperial--</option>
           <option value="uIn">Inch (in)</option>
@@ -78,7 +78,7 @@
           <option value="uCm">Centimetre (cm)</option>
           <option value="uM">Metre (m)</option>
           <option disabled>--Imperial--</option>
-          <option SELECTED value="uIn">Inch (in)</option>
+          <option selected value="uIn">Inch (in)</option>
           <option value="uFt">Feet (ft)</option>
           <option value="uYd">Yard (yd)</option>
           <option value="uMi">Mile (mi)</option>
@@ -88,14 +88,14 @@
 <!--Temperature-->
       <div class="result" id="grpTemperature" style="display:none;">
         <br>
-      <input class="box" type="number" value="1" id="tmpamt" onkeyup="convTmp()">
+      <input class="box" type="number" value="1" id="tmpamt" onchange="convTmp()">
       from <select class="result" id="tmpfr" onchange="convTmp()">
         <option value="uDegc">Celsius (&deg;C)</option>
-        <option SELECTED value="uDegf">Fahrenheit (&deg;F)</option>
+        <option selected value="uDegf">Fahrenheit (&deg;F)</option>
         <option value="uDegk">Kelvin (K)</option>
       </select>
       to <select id="tmpto" class="result" onchange="convTmp()">
-        <option SELECTED value="uDegc">Celsius (&deg;C)</option>
+        <option selected value="uDegc">Celsius (&deg;C)</option>
         <option value="uDegf">Fahrenheit (&deg;F)</option>
         <option value="uDegk">Kelvin (K)</option>
       </select>
@@ -104,11 +104,11 @@
 <!--Data-->
       <div class="result" id="grpIT" style="display:none;">
         <br>
-      <input class="box" type="number" value="1" min="1" id="itamt" onkeyup="convUnits('it')">
+      <input class="box" type="number" value="1" min="1" id="itamt" onchange="convUnits('it')">
       from <select id="itfr" class="result" onchange="convUnits('it')">
         <option value="uBit">Bit (b)</option>
         <option value="uByte">Byte (B)</option>
-        <option SELECTED value="uKb">Kilobyte (KB)</option>
+        <option selected value="uKb">Kilobyte (KB)</option>
         <option value="uMb">Megabyte (MB)</option>
         <option value="uGb">Gigabyte (GB)</option>
         <option value="uTb">Terabyte (TB)</option>
@@ -117,7 +117,7 @@
         <option value="uBit">Bit (b)</option>
         <option value="uByte">Byte (B)</option>
         <option value="uKb">Kilobyte (KB)</option>
-        <option SELECTED value="uMb">Megabyte (MB)</option>
+        <option selected value="uMb">Megabyte (MB)</option>
         <option value="uGb">Gigabyte (GB)</option>
         <option value="uTb">Terabyte (TB)</option>
       </select>
@@ -126,7 +126,7 @@
 <!--Area-->
       <div class="result" id="grpArea" style="display:none;">
         <br>
-      <input class="box" type="number" value="1" min="1" id="areaamt" onkeyup="convUnits('area')">
+      <input class="box" type="number" value="1" min="1" id="areaamt" onchange="convUnits('area')">
       from <select id="areafr" class="result" onchange="convUnits('area')">
         <option disabled>--Metric--</option>
         <option value="uCm2">Square Centimetre (cm<sup>2</sup>)</option>
@@ -135,14 +135,14 @@
         <option value="uHectare">Hectare (ha)</option>
         <option disabled>--Imperial--</option>
         <option value="uSqin">Square Inch (in<sup>2</sup>)</option>
-        <option SELECTED value="uSqft">Square Foot (ft<sup>2</sup>)</option>
+        <option selected value="uSqft">Square Foot (ft<sup>2</sup>)</option>
         <option value="uSqmi">Square Mile (mi<sup>2</sup>)</option>
         <option value="uAcre">Acre</option>
       </select>
       to <select id="areato" class="result" onchange="convUnits('area')">
         <option value="uCm2">Square Centimetre (cm<sup>2</sup>)</option>
         <option value="uM2">Square Metre (m<sup>2</sup>)</option>
-        <option SELECTED value="uKm2">Square Kilometre (km<sup>2</sup>)</option>
+        <option selected value="uKm2">Square Kilometre (km<sup>2</sup>)</option>
         <option value="uHectare">Hectare (ha)</option>
         <option disabled>--Imperial--</option>
         <option value="uSqin">Square Inch (in<sup>2</sup>)</option>
@@ -155,7 +155,7 @@
 <!--Mass-->
       <div class="result" id="grpMass" style="display:none;">
         <br>
-      <input class="box" type="number" value="1" min="1" id="massamt" onkeyup="convUnits('mass')">
+      <input class="box" type="number" value="1" min="1" id="massamt" onchange="convUnits('mass')">
       from <select id="massfr" class="result" onchange="convUnits('mass')">
         <option disabled>--Metric--</option>
         <option value="uMg">Milligram (mg)</option>
@@ -165,7 +165,7 @@
         <option disabled>--Imperial--</option>
         <option value="uOz">Ounce (oz)</option>
         <option value="uOzav">Intl Avoirdupois Ounce (oz avoirdupois)</option>
-        <option SELECTED value="uLb">Pound (lb)</option>
+        <option selected value="uLb">Pound (lb)</option>
         <option value="uStone">Stone (st.)</option>
         <option value="uSt">Short Ton (tn)</option>
       </select>
@@ -173,7 +173,7 @@
         <option disabled>--Metric--</option>
         <option value="uMg">Milligram (mg)</option>
         <option value="uG">Gram (g)</option>
-        <option SELECTED value="uKg">Kilogram (kg)</option>
+        <option selected value="uKg">Kilogram (kg)</option>
         <option value="uTon">Tonne (t)</option>
         <option disabled>--Imperial--</option>
         <option value="uOz">Ounce (oz)</option>
@@ -187,7 +187,7 @@
 <!--Volume-->
       <div class="result"id="grpVolume" style="display:none;">
         <br>
-      <input type="number" class="box" value="1" min="1" id="volamt" onkeyup="convUnits('vol')">
+      <input type="number" class="box" value="1" min="1" id="volamt" onchange="convUnits('vol')">
       from <select id="volfr" class="result" onchange="convUnits('vol')">
         <option disabled>--Metric--</option>
         <option value="uL">Litre (L)</option>
@@ -197,7 +197,7 @@
         <option value="uM3">Cubic Metre (m<sup>3</sup>)</option>
         <option value="uKm3">Cubic Kilometre (km<sup>3</sup>)</option>
         <option disabled>--Imperial--</option>
-        <option SELECTED value="uFloz">Fliud Ounce (fl oz)</option>
+        <option selected value="uFloz">Fliud Ounce (fl oz)</option>
         <option value="uTsp">Teaspoon</option>
         <option value="uTbsp">Tablespoon</option>
         <option value="uCup">Cup</option>
@@ -212,7 +212,7 @@
       to <select id="volto" class="result" onchange="convUnits('vol')">
         <option disabled>--Metric--</option>
         <option value="uL">Litre (L)</option>
-        <option SELECTED value="uMl">Millilitre (ml)</option>
+        <option selected value="uMl">Millilitre (ml)</option>
         <option value="uCc">Cubic Centimetre (cc)</option>
         <option value="uMm3">Cubic Milimetre (mm<sup>3</sup>)</option>
         <option value="uM3">Cubic Metre (m<sup>3</sup>)</option>
@@ -235,13 +235,13 @@
 <!--Speed-->
       <div class="result" id="grpSpeed" style="display:none;">
         <br>
-      <input class="box" type="number" value="1" min="1" id="spdamt" onkeyup="convUnits('spd')">
+      <input class="box" type="number" value="1" min="1" id="spdamt" onchange="convUnits('spd')">
       from <select class="result" id="spdfr" onchange="convUnits('spd')">
         <option disabled>--Metric--</option>
         <option value="uMs">Metres per Second (m/s)</option>
         <option value="uKmh">Kilometres per Hour (km/h)</option>
         <option disabled>--Imperial--</option>
-        <option SELECTED value="uMph">Miles per Hour (mph)</option>
+        <option selected value="uMph">Miles per Hour (mph)</option>
         <option value="uMpm">Miles per Minute(mpm)</option>
         <option value="uMps">Miles per Second(mps)</option>
         <option value="uFps">Foot per Second (fps)</option>
@@ -249,7 +249,7 @@
       to <select id="spdto" class="result" onchange="convUnits('spd')">
         <option disabled>--Metric--</option>
         <option value="uMs">Metres per Second (m/s)</option>
-        <option SELECTED value="uKmh">Kilometres per Hour (km/h)</option>
+        <option selected value="uKmh">Kilometres per Hour (km/h)</option>
         <option disabled>--Imperial--</option>
         <option value="uMph">Miles per Hour (mph)</option>
         <option value="uMpm">Miles per Minute(mpm)</option>

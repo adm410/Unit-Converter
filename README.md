@@ -2,12 +2,22 @@
 ![GitHub Release Date](https://img.shields.io/github/release-date/adm410/Unit-Converter)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/adm410/Unit-Converter)
 ![Website](https://img.shields.io/website?url=https://adm410.github.io/Unit-Converter/)
+
 # Unit Converter
 
 A simple Unit Converter made using HTML, Javascript and CSS.
 
 Unit Converter can be accessed using this [link](https://adm410.github.io/Unit-Converter/).
 
+## Updates in V2
+
+- Added [link](https://adm410.github.io/Unit-Converter/) to Github page.
+
+- Updated Visuals.
+
+- Tweaked Favicons.
+
+- Fixed Bugs.
 
 ## Screenshots
 

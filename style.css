@@ -1,24 +1,60 @@
 body {
-  font-family: arial;
+  font-family: arial !important;
 }
 
 .heading {
+  padding-top: 50px;
   font-size: 350%;
 }
 
 .result{
   font-size: 100%;
 }
+
 .custom-select {
   font-size: 100%;
   position: relative;
 }
+
 .box{
   padding-right: 10px;
   font-size: 120%;
 }
 
 #result{
+  position: relative;
   line-height: 35px;
   font-size: 130%;
+}
+
+select {
+  position: relative;
+  width: fit-content !important;
+  width: 100%;
+  border: 0px solid;
+  border-radius: 9px;
+  cursor: pointer;
+  background-image:none;
+}
+
+input {
+  position: relative;
+  padding-left: 1%;
+  width: fit-content !important;
+  border: 1px solid lightgrey;
+  border-radius: 9px;
+}
+
+.versiontext {
+  position: fixed;
+  nav-right: auto;
+  text-decoration: none;
+  padding: 20px;
+  bottom: 0;
+  right: 0;
+}
+
+a{
+  font-weight: 600;
+  color: #5060e9 !important;
 }

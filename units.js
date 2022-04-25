@@ -1,3 +1,4 @@
+
 function grpSwitch() {
   grp = window.grpSelect;
   for (i = 0; i < grp.length; i++) {
