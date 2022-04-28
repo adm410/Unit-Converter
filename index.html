@@ -1,6 +1,6 @@
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale= 0.5">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="shortcut icon" type="image/png" href="https://raw.githubusercontent.com/adm410/Unit-Converter/V1/logo.png"/>
 <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/adm410/Unit-Converter/V1/logo.png">
 <link rel="icon" href="https://raw.githubusercontent.com/adm410/Unit-Converter/V1/favicon.ico">
@@ -12,7 +12,7 @@
     <script src="units.js" type="text/javascript"></script>
     <script src="obj.js" type="text/javascript"></script>
   </head>
-  <a href="https://github.com/adm410/Unit-Converter" target="_blank" class="versiontext">V2</a>
+  <a href="https://github.com/adm410/Unit-Converter" target="_blank" class="versiontext">V2.1</a>
   <body>
     <h1 class="heading">Unit Convertor</h1>
     Convert <select class="result" class="custom-select" id="grpSelect" style="width:10%" onchange="grpSwitch(),convUnits('time'), convUnits('lgth'), convTmp(), convUnits('it'), convUnits('area'), convUnits('mass'), convUnits('vol'), convUnits('spd')">
@@ -30,7 +30,7 @@
 <!--Time-->
       <div class="result" id="grpTime" style="display:none;">
         <br>
-      <input class="box" type="number" value="1" min="1" id="timeamt" onchange="convUnits('time')">
+      <input autofocus  class="box" type="number" value="1" min="1" id="timeamt" onchange="convUnits('time')">
       from <select id="timefr" class="result" onchange="convUnits('time')">
         <option value="uMs">Millisecond (ms)</option>
         <option value="uSec">Second (s)</option>
@@ -60,7 +60,7 @@
 <!--Length-->
       <div class="result" id="grpLength" style="display:none;">
         <br>
-        <input class="box" type="number" value="1" min="1" id="lgthamt" onchange="convUnits('lgth')">
+        <input autofocus  class="box" type="number" value="1" min="1" id="lgthamt" onchange="convUnits('lgth')">
         from <select class="result" id="lgthfr" onchange="convUnits('lgth')">
           <option disabled>--Metric--</option>
           <option value="uMm">Milimetre (mm)</option>
@@ -88,7 +88,7 @@
 <!--Temperature-->
       <div class="result" id="grpTemperature" style="display:none;">
         <br>
-      <input class="box" type="number" value="1" id="tmpamt" onchange="convTmp()">
+      <input autofocus  class="box" type="number" value="1" id="tmpamt" onchange="convTmp()">
       from <select class="result" id="tmpfr" onchange="convTmp()">
         <option value="uDegc">Celsius (&deg;C)</option>
         <option selected value="uDegf">Fahrenheit (&deg;F)</option>
@@ -104,7 +104,7 @@
 <!--Data-->
       <div class="result" id="grpIT" style="display:none;">
         <br>
-      <input class="box" type="number" value="1" min="1" id="itamt" onchange="convUnits('it')">
+      <input autofocus  class="box" type="number" value="1" min="1" id="itamt" onchange="convUnits('it')">
       from <select id="itfr" class="result" onchange="convUnits('it')">
         <option value="uBit">Bit (b)</option>
         <option value="uByte">Byte (B)</option>
@@ -126,7 +126,7 @@
 <!--Area-->
       <div class="result" id="grpArea" style="display:none;">
         <br>
-      <input class="box" type="number" value="1" min="1" id="areaamt" onchange="convUnits('area')">
+      <input autofocus  class="box" type="number" value="1" min="1" id="areaamt" onchange="convUnits('area')">
       from <select id="areafr" class="result" onchange="convUnits('area')">
         <option disabled>--Metric--</option>
         <option value="uCm2">Square Centimetre (cm<sup>2</sup>)</option>
@@ -155,7 +155,7 @@
 <!--Mass-->
       <div class="result" id="grpMass" style="display:none;">
         <br>
-      <input class="box" type="number" value="1" min="1" id="massamt" onchange="convUnits('mass')">
+      <input autofocus  class="box" type="number" value="1" min="1" id="massamt" onchange="convUnits('mass')">
       from <select id="massfr" class="result" onchange="convUnits('mass')">
         <option disabled>--Metric--</option>
         <option value="uMg">Milligram (mg)</option>
@@ -187,7 +187,7 @@
 <!--Volume-->
       <div class="result"id="grpVolume" style="display:none;">
         <br>
-      <input type="number" class="box" value="1" min="1" id="volamt" onchange="convUnits('vol')">
+      <input autofocus  type="number" class="box" value="1" min="1" id="volamt" onchange="convUnits('vol')">
       from <select id="volfr" class="result" onchange="convUnits('vol')">
         <option disabled>--Metric--</option>
         <option value="uL">Litre (L)</option>
@@ -235,7 +235,7 @@
 <!--Speed-->
       <div class="result" id="grpSpeed" style="display:none;">
         <br>
-      <input class="box" type="number" value="1" min="1" id="spdamt" onchange="convUnits('spd')">
+      <input autofocus  class="box" type="number" value="1" min="1" id="spdamt" onchange="convUnits('spd')">
       from <select class="result" id="spdfr" onchange="convUnits('spd')">
         <option disabled>--Metric--</option>
         <option value="uMs">Metres per Second (m/s)</option>

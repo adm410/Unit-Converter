@@ -9,15 +9,11 @@ A simple Unit Converter made using HTML, Javascript and CSS.
 
 Unit Converter can be accessed using this [link](https://adm410.github.io/Unit-Converter/).
 
-## Updates in V2
+## Updates in V2.1
 
-- Added [link](https://adm410.github.io/Unit-Converter/) to Github page.
+- Tweaked Visuals.
 
-- Updated Visuals.
-
-- Tweaked Favicons.
-
-- Fixed Bugs.
+- Updated Favicons.
 
 ## Screenshots
 
