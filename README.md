@@ -9,7 +9,7 @@ A simple Unit Converter made using HTML, Javascript and CSS.
 
 Unit Converter can be accessed using this [link](https://adm410.github.io/Unit-Converter/).
 
-## Updates in V2.1
+## Updates in V3
 
 - Tweaked Visuals.
 

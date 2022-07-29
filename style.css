@@ -4,45 +4,40 @@ body {
 
 .heading {
   padding-top: 50px;
+  padding-bottom: 20px;
   font-size: 250%;
 }
 
 .result{
-  font-size: 100%;
-}
-
-.custom-select {
-  font-size: 100%;
-  position: relative;
-}
-
-.box{
-  padding-right: 10px;
-  font-size: 120%;
+  font-size: 25px;
 }
 
 #result{
   position: relative;
   line-height: 35px;
   font-size: 130%;
+  background-color: transparent;
+  border-radius: 9px;
+  /*border: solid rgb(204, 204, 204) 4px;*/
+  width: 30%;
 }
 
 select {
   position: relative;
-  width: fit-content !important;
+  width: 10% !important;
   width: 100%;
-  border: 0px solid;
-  border-radius: 9px;
   cursor: pointer;
-  background-image:none;
+  font-size: 25px;
+  width: 10% !important;
 }
 
 input {
   position: relative;
   padding-left: 1%;
-  width: fit-content !important;
-  border: 1px solid lightgrey;
+  padding-right: 10px;
   border-radius: 9px;
+  border: solid rgb(204, 204, 204) 2px;
+  font-size: 25px;
 }
 
 .versiontext {
@@ -57,4 +52,8 @@ input {
 a{
   font-weight: 600;
   color: #5060e9 !important;
+}
+
+.converttext{
+  font-size: 25px;
 }
