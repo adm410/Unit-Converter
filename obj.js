@@ -1,3 +1,13 @@
+window.onscroll = function() {scrollFunction()};
+  
+function scrollFunction() {
+  if (document.body.scrollTop > 25 || document.documentElement.scrollTop > 25) {
+    document.getElementById("headereffect").style.boxShadow = "0px 16px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
+
+  } else {
+    document.getElementById("headereffect").style.boxShadow = "";
+}
+}
 
 function grpSwitch() {
   grp = window.grpSelect;
@@ -38,7 +48,7 @@ function convUnits(c) {
   toAbbrev = abbrev[toUnit];
 
   result.style.display = "";
-  result.innerHTML = amt + " " + frAbbrev + " = " + addCommas(((amt*frVal)/toVal).toFixed(3)) + " " + toAbbrev + " <br>" + amt + " " + toAbbrev + " = " + addCommas(((amt*toVal)/frVal).toFixed(3)) + " " + frAbbrev;
+  result.innerHTML = amt + " " + frAbbrev + " = " + addCommas(((amt*frVal)/toVal).toFixed(3)) + " " + toAbbrev + " <br >" + amt + " " + toAbbrev + " = " + addCommas(((amt*toVal)/frVal).toFixed(3)) + " " + frAbbrev;
   return true;
 }
 
@@ -67,6 +77,6 @@ function convTmp() {
 
   var result = document.getElementById("result");
   result.style.display = "";
-  result.innerHTML = amt + " " + frAbbrev + " = " + res.toFixed(1) + " " + toAbbrev + " <br>" + amt + " " + toAbbrev + " = " + res2.toFixed(1) + " " + frAbbrev;
+  result.innerHTML = amt + " " + frAbbrev + " = " + res.toFixed(1) + " " + toAbbrev + " <br >" + amt + " " + toAbbrev + " = " + res2.toFixed(1) + " " + frAbbrev;
   return true;
 }

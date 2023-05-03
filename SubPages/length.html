@@ -1,0 +1,80 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=.4">
+  <link rel="shortcut icon" type="image/png"
+    href="https://raw.githubusercontent.com/adm410/Unit-Converter/V4/logo.png" />
+  <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/adm410/Unit-Converter/V4/logo.png">
+  <link rel="icon" href="https://raw.githubusercontent.com/adm410/Unit-Converter/V4/favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <title>Length Converter</title>
+  <link rel="stylesheet" type="text/css" href="../style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../units.js" type="text/javascript"></script>
+  <script src="../obj.js" type="text/javascript"></script>
+</head>
+
+<body class="justify-content-center align-items-center bg-light">
+  <header style="user-select: none;" class="sticky-top px-4 pt-2 bg-light" id="headereffect">
+    <nav class="navbar navbar-expand-lg">
+      <a href="https://github.com/adm410/Unit-Converter" target="_blank"
+        class="link-body-emphasis text-decoration-none">
+        <h2>Length Converter<sub class="versiontext">V4</sub></h2>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav nav-pills nav-fill ms-auto">
+          <li><a href="../home.html" class="nav-link px-2 link-secondary">Home</a></li>
+          <li><a href="./time.html" class="nav-link px-2 link-secondary">Time</a></li>
+          <li><a href="./length.html" class="nav-link px-2 link-secondary  active text-light">Length</a></li>
+          <li><a href="./temperature.html" class="nav-link px-2 link-secondary">Temperature</a></li>
+          <li><a href="./data.html" class="nav-link px-2 link-secondary">Data</a></li>
+          <li><a href="./area.html" class="nav-link px-2 link-secondary">Area</a></li>
+          <li><a href="./mass.html" class="nav-link px-2 link-secondary">Mass</a></li>
+          <li><a href="./volume.html" class="nav-link px-2 link-secondary">Volume</a></li>
+          <li><a href="./speed.html" class="nav-link px-2 link-secondary">Speed</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="vstack gap-3">
+    <div class="hstack gap-3" style="user-select: none;">
+      <input autofocus class="form-control box" type="number" value="1" min="1" id="lgthamt"
+        onkeyup="convUnits('lgth')">
+      from <select id="lgthfr" class="form-select" onchange="convUnits('lgth')">
+        <option disabled>Metric</option>
+        <option value="uMm">Milimetre (mm)</option>
+        <option selected value="uCm">Centimetre (cm)</option>
+        <option value="uM">Metre (m)</option>
+        <option disabled>Imperial</option>
+        <option value="uIn">Inch (in)</option>
+        <option value="uFt">Feet (ft)</option>
+        <option value="uYd">Yard (yd)</option>
+        <option value="uMi">Mile (mi)</option>
+      </select>
+      to <select id="lgthto" class="form-select" onchange="convUnits('lgth')">
+        <option disabled>Metric</option>
+        <option value="uMm">Milimetre (mm)</option>
+        <option value="uCm">Centimetre (cm)</option>
+        <option value="uM">Metre (m)</option>
+        <option disabled>Imperial</option>
+        <option selected value="uIn">Inch (in)</option>
+        <option value="uFt">Feet (ft)</option>
+        <option value="uYd">Yard (yd)</option>
+        <option value="uMi">Mile (mi)</option>
+      </select>
+    </div>
+    <br>
+    <div class="answer" id="result" style="display:none;">
+      <div class="result" id="result">&nbsp;</div>
+    </div>
+  </div>
+</body>
+
+</html>

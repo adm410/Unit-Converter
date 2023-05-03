@@ -1,59 +1,45 @@
-body {
-  font-family: arial !important;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+
+body, .vstack {
+  margin: auto;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500 !important;
+  transition: 0.3s ease;
+}
+.sticky-top {
+  /* -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);  */
+}
+.vstack {
+  padding-top: 30px;
+}
+.hstack {
+  padding: 0 20%;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-.heading {
-  padding-top: 50px;
-  padding-bottom: 20px;
-  font-size: 250%;
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
-
-.result{
-  font-size: 25px;
+h2 {
+  font-weight: 600 !important;
 }
-
-#result{
-  position: relative;
-  line-height: 35px;
-  font-size: 130%;
-  background-color: transparent;
-  border-radius: 9px;
-  /*border: solid rgb(204, 204, 204) 4px;*/
-  width: 30%;
-}
-
-select {
-  position: relative;
-  width: 10% !important;
-  width: 100%;
-  cursor: pointer;
-  font-size: 25px;
-  width: 10% !important;
-}
-
-input {
-  position: relative;
-  padding-left: 1%;
-  padding-right: 10px;
-  border-radius: 9px;
-  border: solid rgb(204, 204, 204) 2px;
-  font-size: 25px;
-}
-
 .versiontext {
-  position: fixed;
-  nav-right: auto;
-  text-decoration: none;
-  padding: 20px;
-  bottom: 0;
-  right: 0;
+  font-size: small;
+  font-weight: bold;
+  opacity: 0.4;
 }
-
-a{
-  font-weight: 600;
-  color: #5060e9 !important;
-}
-
-.converttext{
-  font-size: 25px;
+.answer {
+  padding: 12px;
+  font-weight: bold;
+  border: 1px solid;
+  border-color: #ccc;
+  border-radius: 10px;
 }
