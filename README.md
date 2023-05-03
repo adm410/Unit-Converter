@@ -9,16 +9,11 @@ A simple Unit Converter made using HTML, Javascript and CSS.
 
 Unit Converter can be accessed using this [link](https://adm410.github.io/Unit-Converter/).
 
-## Updates in V3
+## Updates in V4
 
-- Tweaked Visuals.
-
-- Updated Favicons.
+- Fully Redesigned UI.
 
 ## Screenshots
 
-![Screenshot-1a](https://raw.githubusercontent.com/adm410/Unit-Converter/V3/Screenshot-1a.png#gh-light-mode-only)
-![Screenshot-1b](https://raw.githubusercontent.com/adm410/Unit-Converter/V3/Screenshot-1b.png#gh-dark-mode-only)
-##
-![Screenshot-2a](https://raw.githubusercontent.com/adm410/Unit-Converter/V3/Screenshot-2a.png#gh-light-mode-only)
-![Screenshot-2b](https://raw.githubusercontent.com/adm410/Unit-Converter/V3/Screenshot-2b.png#gh-dark-mode-only)
+<img width="1470" alt="Screenshot-1" src="https://user-images.githubusercontent.com/90643958/235851601-d6f6b605-71cc-4b07-b8d0-098ddc69548d.png">
+<img width="1470" alt="Screenshot-2" src="https://user-images.githubusercontent.com/90643958/235851628-dfc1e65d-a580-47bd-a90a-2df2f1fb1ba4.png">
